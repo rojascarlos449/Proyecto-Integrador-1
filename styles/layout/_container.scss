@@ -1,0 +1,9 @@
+.container  {
+    margin: 0 auto;
+}
+
+.container__page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

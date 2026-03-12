@@ -1,0 +1,29 @@
+
+@mixin to-breakpoint ($bp) {
+    @if $bp == xs {
+    @media (max-width: 320px){ //de 0px a 320px
+      @content;
+    }
+  }
+    @else if $bp == sm {
+    @media (max-width: 480px){ //de 321px a 480px
+      @content;
+    }
+  }
+    @else if $bp == sm {
+    @media (max-width: 860px){ //de 481px a 860px
+      @content;
+    }
+  }  
+    @else if $bp == lg {
+    @media (max-width: 1200px){ //de 861px a 1200px
+      @content;
+    }
+  }
+    @else {
+    @media (min-width: 1200px){ //mas de 1200px 
+      @content;
+    }
+  } 
+}
+

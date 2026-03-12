@@ -1,0 +1,154 @@
+.about__banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 7rem;
+  width: 100%;
+
+  padding: 120px 20px;
+  background: linear-gradient(135deg,#c471f5,#fa71cd);
+  color: white;
+}
+.about__banner-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  flex-direction: column;
+}
+
+.about__values{
+
+  margin-top:80px;
+  text-align:center;
+
+}
+
+.about__cards{
+
+  margin-top:40px;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+
+}
+
+.about__card{
+
+  background:#f5f5f5;
+  padding:25px;
+  border-radius:8px;
+
+}
+
+/* =========================
+   STATS
+========================= */
+
+.about__stats{
+
+  margin-top:80px;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+
+}
+
+.about__stat h3{
+
+  font-size:36px;
+  color:#ffb703;
+
+}
+
+.about__history{
+
+  margin-top:80px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+
+}
+
+.about__history-image img{
+
+  width:100%;
+  border-radius:10px;
+
+}
+
+/* =========================
+   CTA
+========================= */
+
+.about__cta{
+
+  margin-top:80px;
+  text-align:center;
+
+}
+
+.about__cta-buttons{
+
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+
+}
+
+.about__cta-button{
+
+  padding:12px 25px;
+  background:#ffb703;
+  text-decoration:none;
+  color:black;
+  border-radius:6px;
+
+}
+
+.about__cta-button--secondary{
+
+  background:transparent;
+  border:2px solid #ffb703;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@include to-breakpoint(md){
+
+  .about__cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about__stats{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .about__history{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@include to-breakpoint(sm){
+
+  .about__cards{
+    grid-template-columns:1fr;
+  }
+
+  .about__title{
+    font-size:30px;
+  }
+
+}

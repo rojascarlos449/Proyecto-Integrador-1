@@ -1,0 +1,28 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, minmax(0,1fr));
+    grid-template-rows: auto;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        grid-column-end: span #{$i};
+    }
+    .col-offset-#{$i} {
+        grid-column-start: #{$i};
+    }
+    @each $bp-key, $bp-value in $breakpoints {
+          .col-#{$bp-key}-#{$i} {
+            @media (max-width: $bp-value) {
+                grid-column-end: span #{$i};
+            }
+        }
+        .col-offset-#{$bp-key} {
+            @media (max-width: $bp-value) {
+                grid-column-start: #{$i};
+        }
+    }
+    }
+}

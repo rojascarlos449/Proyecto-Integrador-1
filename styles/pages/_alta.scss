@@ -1,0 +1,152 @@
+
+.form-page {
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.helper-text {
+  display: none;
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.has-error {
+  display: block;
+}
+
+.field-element.has-error {
+  border: 2px solid red;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 600px;
+  margin: auto;
+}.field-element {
+  padding: 6px;
+  border-radius: 4px;
+}
+
+select.field-element {
+  height: 35px;
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Tarjetas de cada campo */
+.form__card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Para los que ocupan toda la fila */
+.form__card.full {
+  grid-column: span 2;
+}
+
+/* ===== CATEGORÍAS ===== */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.category-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.category-item input {
+  margin-right: 6px;
+}
+
+/* ===== ENVÍO SIN CARGO ===== */
+
+.shipping-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #f3f6fb;
+}
+
+.shipping-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 26px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Botón */
+
+.btn__submit {
+  padding: 12px;
+  background-color: #ff6a3d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+

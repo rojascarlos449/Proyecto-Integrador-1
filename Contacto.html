@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="tittle__font">Juguetería Cósmico</div>
+  <nav class="nav">
+    <a href="./index.html" class="nav__content">Inicio</a>
+    <a href="./Alta.html" class="nav__content">Alta</a>
+    <a href="./Contacto.html" class="nav__content">Contacto</a>
+    <a href="./Nosotros.html" class="nav__content">Nosotros</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>Contacto</h1>
+
+<!-- TARJETAS DE CONTACTO -->
+<section class="contact-container">
+
+  <div class="contact-card phone">
+    <h3>📞 Teléfono</h3>
+    <p><strong>+54 11 1234 5678</strong></p>
+    <small>Lun - Vie: 9:00 - 18:00</small>
+  </div>
+
+  <div class="contact-card email">
+    <h3>✉️ Correo</h3>
+    <p><strong>Jug.cosmico@gmail.com</strong></p>
+    <small>Respondemos en 24hs</small>
+  </div>
+
+  <div class="contact-card address">
+    <h3>📍 Dirección</h3>
+    <p><strong>Av. Juguetes 123</strong></p>
+    <small>Buenos Aires</small>
+  </div>
+
+  <div class="contact-card time">
+    <h3>⏰ Horarios</h3>
+    <p><strong>Lun - Sáb: 10:00 - 20:00</strong></p>
+    <small>Dom: 11:00 - 18:00</small>
+  </div>
+
+</section>
+
+<!-- GRID FORM + MAPA -->
+<section class="contact-grid">
+
+  <!-- FORMULARIO -->
+  <div class="contact-form-box">
+    <form id="contact-form" novalidate>
+
+      <div class="form__card">
+        <div class="form__label">
+          <label for="name">Nombre</label>
+        </div>
+        <input id="name" name="name" type="text" class="field-element">
+        <span id="name-error" class="helper-text">El nombre es obligatorio</span>
+      </div>
+
+      <div class="form__card">
+        <div class="form__label">
+          <label for="email">E-mail</label>
+        </div>
+        <input id="email" name="email" type="email" class="field-element">
+        <span id="email-error" class="helper-text">Email inválido</span>
+      </div>
+
+      <div class="form__card">
+        <div class="form__label">
+          <label for="message">Mensaje</label>
+        </div>
+        <textarea id="message" name="message" class="field-element"></textarea>
+        <span id="message-error" class="helper-text">El mensaje es obligatorio</span>
+      </div>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+  </div>
+
+  <!-- MAPA + WHY US -->
+  <div class="contact-map">
+
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d277.8375770205488!2d-68.91735202256804!3d-46.53120865835692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1771849752686!5m2!1ses!2sar"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <div class="why-us">
+      <h3>¿Por qué elegirnos?</h3>
+      <ul>
+        <li>🎧 Atención personalizada</li>
+        <li>🚚 Envíos a todo el país</li>
+        <li>💬 Chat disponible</li>
+      </ul>
+
+      <div class="socials">
+        <button>Facebook</button>
+        <button>Instagram</button>
+        <button>Twitter</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <h3>Juguetería Cósmico</h3>
+        <p>Donde la diversión cobra vida 🚀</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Secciones</h4>
+        <a href="./index.html">Inicio</a>
+        <a href="./alta.html">Alta</a>
+        <a href="./contacto.html">Contacto</a>
+        <a href="./nosotros.html">Nosotros</a>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>📍 Argentina</p>
+        <p>📞 +54 11 1234 5678</p>
+        <p>✉️ contacto@jugueteriacosmico.com</p>
+      </div>
+
+    </div>
+
+    <div class="footer__copy">
+      <p>© 2026 Juguetería Cósmico - Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/contacto.js"></script>
+</body>
+</html>

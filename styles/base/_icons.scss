@@ -1,0 +1,10 @@
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.form__label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre icono y texto */
+}

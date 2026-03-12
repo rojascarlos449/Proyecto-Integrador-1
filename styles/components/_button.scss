@@ -1,0 +1,27 @@
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    &__primary {
+        &-solid{
+        background-color: $primary-dark-color;
+        color: $light-font-color;
+        margin-top: 1rem;
+        &:hover {
+            background-color: $primary-color;
+            color: $light-font-color;
+           }
+        }
+    };
+    &__secondary {
+        &-solid{
+        background-color: $secondary-dark-color;
+        color: $light-font-color;
+          &:hover {
+            background-color: $secondary-color;
+            color: $light-font-color;
+            }
+        }
+    }
+}
