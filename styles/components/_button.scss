@@ -5,7 +5,7 @@
     cursor: pointer;
     &__primary {
         &-solid{
-        background-color: $primary-dark-color;
+        background-color: $primary-color;
         color: $light-font-color;
         margin-top: 1rem;
         &:hover {
@@ -16,10 +16,10 @@
     };
     &__secondary {
         &-solid{
-        background-color: $secondary-dark-color;
+        background-color: $secondary-color;
         color: $light-font-color;
           &:hover {
-            background-color: $secondary-color;
+            background-color: $primary-color;
             color: $light-font-color;
             }
         }

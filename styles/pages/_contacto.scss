@@ -24,8 +24,6 @@ main {
   border: 2px solid red;
 }
 
-/* ====== CONTENEDOR GENERAL ====== */
-
 body {
   background: #f4f7fb;
   font-family: Arial, sans-serif;
@@ -58,8 +56,6 @@ h1 {
 .address { border-top: 6px solid #f39c12; }
 .time { border-top: 6px solid #e84393; }
 
-/* ====== FORMULARIO ====== */
-
 #contact-form {
   max-width: 500px;
   margin: auto;
@@ -69,15 +65,11 @@ h1 {
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* ====== CARD DE CADA CAMPO ====== */
-
 .form__card {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
-/* ====== LABEL CON ICONO ====== */
 
 .form__label {
   display: flex;
@@ -93,8 +85,6 @@ h1 {
   height: 18px;
 }
 
-/* ====== INPUTS Y TEXTAREA ====== */
-
 .field-element {
   padding: 12px 14px;
   border-radius: 10px;
@@ -109,13 +99,10 @@ h1 {
   box-shadow: 0 0 0 2px rgba(255,107,61,0.2);
 }
 
-/* textarea */
 textarea.field-element {
   resize: none;
   min-height: 120px;
 }
-
-/* ====== MENSAJES DE ERROR ====== */
 
 .helper-text {
   display: none;
@@ -131,8 +118,6 @@ textarea.field-element {
 .field-element.has-error {
   border: 2px solid red;
 }
-
-/* ====== BOTÓN ====== */
 
 button[type="submit"] {
   width: 100%;
@@ -195,8 +180,6 @@ button[type="submit"]:hover {
   border-radius: 8px;
   cursor: pointer;
 }
-
-/* ====== RESPONSIVE ====== */
 
 @media (max-width: 600px) {
   #contact-form {

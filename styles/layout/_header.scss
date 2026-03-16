@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2.5rem;
-  background-color: #bf94f4;
+  background-color: $primary-color;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   border-radius: 0 0 20px 20px;
+  box-sizing: border-box;
 
   background: rgba(242, 245, 249, 0.85);
   backdrop-filter: blur(4px);
@@ -22,15 +23,15 @@
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     border-radius: 12px;
-    background-color: rgba(249, 9, 9, 0.25);
-    color: black;
+    background-color: $secondary-color;
+    color: $color-text;
     font-weight: bold;
     transition: 0.3s;
   }
 
   .nav__content:hover {
-    background-color: white;
-    color: #bf94f4;
+    background-color: $color-accent;
+    color: black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     transform: translateY(-0.2rem);
   }

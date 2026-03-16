@@ -28,6 +28,19 @@
 }.field-element {
   padding: 6px;
   border-radius: 4px;
+  height: 20px;
+}
+
+select {
+  padding: 6px;
+  border-radius: 4px;
+  height: 20px;
+    width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 select.field-element {
@@ -40,19 +53,15 @@ select.field-element {
   gap: 20px;
 }
 
-/* Tarjetas de cada campo */
 .form__card {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-/* Para los que ocupan toda la fila */
 .form__card.full {
   grid-column: span 2;
 }
-
-/* ===== CATEGORÍAS ===== */
 
 .category-grid {
   display: grid;
@@ -73,8 +82,6 @@ select.field-element {
   margin-right: 6px;
 }
 
-/* ===== ENVÍO SIN CARGO ===== */
-
 .shipping-card {
   display: flex;
   justify-content: space-between;
@@ -89,8 +96,6 @@ select.field-element {
   font-size: 0.85rem;
   color: #555;
 }
-
-/* Switch */
 
 .switch {
   position: relative;
@@ -136,8 +141,6 @@ select.field-element {
 .switch input:checked + .slider::before {
   transform: translateX(24px);
 }
-
-/* Botón */
 
 .btn__submit {
   padding: 12px;

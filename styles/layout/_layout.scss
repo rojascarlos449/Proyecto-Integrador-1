@@ -6,7 +6,7 @@
   padding: 4rem;
   gap: 2rem;
   align-items: center;
-  background: linear-gradient(#bf94f4, #F15BB5, #a240f8);
+  background: linear-gradient(135deg, $primary-color, $color-accent);
   color: white; 
   .banner__title{
     margin: 0;
@@ -42,7 +42,7 @@
       display: block;
       font-size: 0.9rem;
       color: gray;
-}
+     }
 }
 
 .products {
@@ -78,7 +78,7 @@
 }
 
 .price {
-  color: #f15bb5;
+  color: $primary-color;
   font-weight: bold;
 }
 
@@ -86,13 +86,17 @@
   margin: 4rem;
   padding: 3rem;
   border-radius: 20px;
-  background: linear-gradient(90deg,#bf94f4,#f15bb5);
+  background: linear-gradient(90deg, $secondary-color, $primary-color);
   color: white;
   text-align: center;
 }
 
-.cta__text h2 {
+.cta__text {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 

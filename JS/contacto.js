@@ -1,5 +1,4 @@
 
-// VARIABLES
 const form = document.getElementById("contact-form");
 
 const nameInput = document.getElementById("name");
@@ -7,12 +6,10 @@ const emailInput = document.getElementById("email");
 const messageInput = document.getElementById("message");
 
 
-// EXPRESIONES REGULARES
 const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,20}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 
-// FUNCIONES
 function showError(field, message) {
   const input = document.getElementById(field);
   const helper = document.getElementById(`${field}-error`);
@@ -32,7 +29,7 @@ function clearErrors() {
 
 function showSuccess() {
   const successMsg = document.createElement("p");
-  successMsg.textContent = "✅ Mensaje enviado correctamente. Gracias por contactarnos.";
+  successMsg.textContent = "Mensaje enviado correctamente. Gracias por contactarnos.";
   successMsg.style.color = "green";
   successMsg.style.textAlign = "center";
   successMsg.style.marginTop = "15px";
@@ -45,7 +42,6 @@ function showSuccess() {
 }
 
 
-// EVENTO SUBMIT
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -53,7 +49,7 @@ form.addEventListener("submit", function (e) {
 
   let valid = true;
 
-// Validaciones 
+
   if (!nameRegex.test(nameInput.value.trim())) {
     showError("name", "El nombre debe tener entre 3 y 20 letras");
     valid = false;
